@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Bulma Playground</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bulma Version 0.9.0-->
+    <link rel='stylesheet' href='https://unpkg.com/bulma@0.9.0/css/bulma.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link rel='stylesheet' href='https://kingsora.github.io/OverlayScrollbars/etc/os-theme-thin-dark.css'>	  
+    <link rel='stylesheet' href="prism.css">
+    <link rel="stylesheet" href="cheatsheet.css">
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="container content">
+              <i class="is-large fas fa-plane"></i>
+              <h1 class="title">Flight <em>Buddy</em></h1>
+              <h3 class="subtitle">
+              Are we there yet?
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- This is the search section -->
+    
+    <div class="container">
+        <div class="notification">
+    <div class="field">
+        <label class="label">Flight Number</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Departing from</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-info" type="text" placeholder="Text input">
+          <span class="icon is-small is-left">
+            <i class="fas fa-map-pin"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-plane"></i>
+          </span>
+        </div>
+        <p class="help is-info">Please enter the city of your departure.</p>
+      </div>
+      
+      <div class="field">
+        <label class="label">Arriving to</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-info" type="email" placeholder="Text input">
+          <span class="icon is-small is-left">
+            <i class="fas fa-map-pin"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-plane"></i>
+          </span>
+        </div>
+        <p class="help is-info">Please enter the city of your destination.</p>
+      </div>
+      
+      
+      <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="footer">
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <article class="notification media has-background-white">
+          <figure class="media-left">
+            <span class="icon">
+              <i class="has-text-warning fas fa-plane"></i>
+            </span>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-4">Aviation Stack</h1>
+              <p class="is-size-5 subtitle">
+                Here is some information about Aviation Stack. 
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="column is-one-third">
+        <article class="notification has-background-white media">
+          <figure class="media-left">
+            <span class="icon has-text-info">
+              <i class="fas fa-cloud"></i>
+            </span>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-4">Open Weather</h1>
+              <p class="is-size-5 subtitle">
+                Here is some info about Open Weather. 
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="column is-one-third">
+        <article class="notification has-background-white media">
+          <figure class="media-left">
+            <span class="icon has-text-danger">
+              <i class="fas fa-map-pin"></i>
+            </span>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-4">Google Maps</h1>
+              <p class="is-size-5 subtitle">
+               Here is some info about Google Maps. 
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    
+<script>
+  window.addEventListener('resize', () => {
+  const divs = document.querySelectorAll(".menu-list");
+  if (window.innerWidth < 768){
+    divs.forEach(div => div.classList.add("tags"));
+  }
+  else {
+    divs.forEach(div => div.classList.remove("tags"));
+  }
+});
+  
+  document.addEventListener("DOMContentLoaded", function() {
+	//The first argument are the elements to which the plugin shall be initialized
+	//The second argument has to be at least a empty object or a object with your desired options
+	OverlayScrollbars(document.querySelectorAll("body"), { });
+});
+  
+</script>  
+</body>
+</html>

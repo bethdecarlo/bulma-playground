@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Bulma Playground</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bulma Version 0.9.0-->
+    <link rel='stylesheet' href='https://unpkg.com/bulma@0.9.0/css/bulma.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link rel='stylesheet' href='https://kingsora.github.io/OverlayScrollbars/etc/os-theme-thin-dark.css'>	  
+    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="container content">
+              <i class="is-large fas fa-plane"></i>
+              <h1 class="title">Flight <em>Buddy</em></h1>
+              <h3 class="subtitle">
+              Are we there yet?
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <aside class="is-medium menu">
+          <p class="menu-label">
+            FLIGHT SEARCH
+          </p>
+          <ul class="menu-list">
+            <li class="is-right"><a href="#const" class="is-active"><i class="fas fa-plane"></i> My Flight</a></li>
+            <li><a href="#let" class="is-active"><i class="fas fa-cloud"></i> My Weather</a></li>
+            <li><a href="#let" class="is-active"><i class="fas fa-info-circle"></i> My Resources</a></li>
+          </ul>
+              <p class="menu-label">
+                YOUR SEARCHES
+              </p>
+              <ul class="menu-list">
+                <li><span class="tag is-white is-medium">Chicago</span></li>
+                <li><span class="tag is-white is-medium">Atlanta</span></li>
+                <li><span class="tag is-white is-medium">Tokyo</span></li>
+              </ul>
+            </aside>
+          </div>
+          <div class="column is-9">
+            <div class="content is-medium">
+          <h3 class="title is-3"> Here's the latest... </h3>
+              <div class="box">
+                <h4 id="const" class="title is-3">Flight Info</h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                  <i class="fas fa-plane"></i>
+                  </span>
+                  <div class="message-body">
+                    Here is some info about your flight.
+                  </div>
+                </article>
+              <pre><code class="language-javascript"> Here is an alert about your flight.</code></pre>
+            </div>
+            <div class="box">
+              <h4 id="let" class="title is-3"> Weather Dashboard </h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-cloud"></i>
+                </span>
+                <div class="message-body">
+                Here is an alert about the weather.
+                </div>
+              </article>
+            <pre><code class="language-javascript">Here is an alert about the weather. </code></pre>
+          </div>
+          <h3 class="title is-3">Safe travels!</h3>
+          <div class="box">
+            <h4 id="lorem" class="title is-4"> Travel resources</h4>
+            <article class="message is-primary">
+              <span class="icon has-text-primary">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <div class="message-body">
+                Link here to travel resource. 
+              </div>
+            </article>
+          <pre><code class="language-javascript"> Here is an alert. </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<footer class="footer">
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <article class="notification media has-background-white">
+          <figure class="media-left">
+            <span class="icon">
+              <i class="has-text-warning fas fa-plane"></i>
+            </span>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-4">Aviation Stack</h1>
+              <p class="is-size-5 subtitle">
+                Here is some information about Aviation Stack. 
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="column is-one-third">
+        <article class="notification has-background-white media">
+          <figure class="media-left">
+            <span class="icon has-text-info">
+              <i class="fas fa-cloud"></i>
+            </span>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-4">Open Weather</h1>
+              <p class="is-size-5 subtitle">
+                Here is some info about Open Weather. 
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="column is-one-third">
+        <article class="notification has-background-white media">
+          <figure class="media-left">
+            <span class="icon has-text-danger">
+              <i class="fas fa-map-pin"></i>
+            </span>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-4">Google Maps</h1>
+              <p class="is-size-5 subtitle">
+               Here is some info about Google Maps. 
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    
+<script>
+  window.addEventListener('resize', () => {
+  const divs = document.querySelectorAll(".menu-list");
+  if (window.innerWidth < 768){
+    divs.forEach(div => div.classList.add("tags"));
+  }
+  else {
+    divs.forEach(div => div.classList.remove("tags"));
+  }
+});
+  
+  document.addEventListener("DOMContentLoaded", function() {
+	//The first argument are the elements to which the plugin shall be initialized
+	//The second argument has to be at least a empty object or a object with your desired options
+	OverlayScrollbars(document.querySelectorAll("body"), { });
+});
+  
+</script>  
+</body>
+</html>
